@@ -9,8 +9,8 @@
 .landing-grid {
   background: #83a4d4
 ;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #1c92d2, #f2fcfe, #f2fcfe);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #1c92d2, #ffffff, #6dd5fa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #f2f2f2, #f2fcfe, #f2fcfe);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #eaeaea, #ffffff, #eaeaea); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
   position: fixed;
   top: 0;
@@ -108,12 +108,12 @@
 .social-links {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width:60%;
   margin: auto;
 }
 
 .social-links i {
-  color: white;
+ color: white;
   font-size: 5em;
   padding: 8px;
 }
