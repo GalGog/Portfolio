@@ -5,19 +5,18 @@ import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
 class Contact extends Component {
     render() {
         return(
-            <div className="contact-body">
-                <Grid className="contact-grid">
-                    <Cell col={6}>
-                        <h2>Halyna Podyman</h2>
+                <Grid>
+                    <Cell Cell className="resume-left-col" col={4}>
                         <img
                             src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
                             alt="avatar"
                             style={{height: '250px'}}
                         />
-                        <p style={{ width: '75%', margin: 'auto', paddingTop: '1em'}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                        <h2>Halyna Podyman</h2>
+                        <p style={{ width: '75%', margin: 'auto', paddingTop: '1em'}}>Front End Web Developer</p>
 
                     </Cell>
-                    <Cell col={6}>
+                    <Cell className="contact-right-col" col={8}>
                         <h2>Contact Me</h2>
                         <hr/>
 
@@ -31,15 +30,28 @@ class Contact extends Component {
                                 </ListItem>
                                 <ListItem>
                                     <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                                        <i className="fa fa-envelope" aria-hidden="true"/>
-                                        halynapodyman@gmail.com
+                                        <a href="https://mail.google.com" rel="noopener noreferrer" target="_blank">
+                                            <i className="fas fa-envelope-square" aria-hidden="true" />
+                                            halynapodyman@gmail.com
+                                        </a>
                                     </ListItemContent>
                                 </ListItem>
 
                                 <ListItem>
                                     <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                                        <i className="fa fa-skype" aria-hidden="true"/>
-                                        MySkypeID
+                                        <a href="https://www.linkedin.com/in/halyna-podyman-7ba62514b/" rel="noopener noreferrer" target="_blank">
+                                            <i className="fab fa-linkedin" aria-hidden="true" />
+                                            Halyna Podyman
+                                        </a>
+                                    </ListItemContent>
+                                </ListItem>
+
+                                <ListItem>
+                                    <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
+                                        <a href="https://www.skype.com/en/" rel="noopener noreferrer" target="_blank">
+                                            <i className="fab fa-skype" aria-hidden="true" />
+                                            Galina Pgv
+                                        </a>
                                     </ListItemContent>
                                 </ListItem>
 
@@ -48,7 +60,6 @@ class Contact extends Component {
                         </div>
                     </Cell>
                 </Grid>
-            </div>
         )
     }
 }

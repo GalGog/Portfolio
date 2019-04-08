@@ -1,9 +1,8 @@
 .header-color {
   background: #6dd5fa
 ;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #83a4d4,
-  #b6fbff, #6DD5FA);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right,#83a4d4 , #6DD5FA, #6DD5FA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #bdc3c7, #b6fbff, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,#bdc3c7, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .landing-grid {
@@ -25,31 +24,18 @@
 
 /* Resume Page css */
 .resume-right-col {
-  background: #27221F;
+  background: #2c3e50;
   color: white;
   padding: 2em;
+}
+.resume-left-col {
+  background: #f2f2f2;
+  padding: 1em;
 }
 
 /* contact page css */
 
-.contact-body {
-  margin: auto;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  padding-top: 2em;
-}
 
-.contact-grid {
-  text-align: center;
-  justify-content: center;
-  width: 80%;
-  height: 550px;
-  background: white;
-  color: black;
-  margin-bottom: 20px;
-}
 
 .contact-grid h2 {
   font-family: 'Anton', sans-serif;
@@ -70,7 +56,15 @@
   font-size: 66px;
   padding-right: 5rem;
 }
-
+.contact-right-col {
+  background: #2c3e50;
+  color: white;
+  padding: 2em;
+}
+.contact-left-col {
+  background: #f2f2f2;
+  padding: 1em;
+}
 
 /* contact page css */
 
@@ -80,7 +74,7 @@
 }
 
 .banner-text {
-  background-color: black;
+  background-color: #2c3e50;
   opacity: .8;
   width: 75%;
   margin: auto;

@@ -19,7 +19,7 @@ class Landing extends Component {
 
                             <hr/>
 
-                            <p>HTML/CSS | Bootstrap | WordPress| JavaScript | React/Redux</p>
+                            <p>HTML/CSS | Bootstrap | WordPress | JavaScript | React/Redux</p>
 
                             <div className="social-links">
 
