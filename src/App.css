@@ -1,13 +1,16 @@
 .header-color {
-  background: #833ab4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #6dd5fa
+;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #83a4d4,
+  #b6fbff, #6DD5FA);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,#83a4d4 , #6DD5FA, #6DD5FA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .landing-grid {
-  background: #833ab4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #83a4d4
+;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1c92d2, #f2fcfe, #f2fcfe);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1c92d2, #ffffff, #6dd5fa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
   position: fixed;
   top: 0;
