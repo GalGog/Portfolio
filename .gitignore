@@ -7,3 +7,5 @@ node_modules/
 package.json
 public/
 yarn.lock
+build/
+package-lock.json
