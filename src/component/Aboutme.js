@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Dimmer, Header, Image } from 'semantic-ui-react'
 
-export default class DimmerExampleEvents extends Component {
+export default class About extends Component {
     state = {};
 
     handleShow = () => this.setState({ active: true });
@@ -33,5 +33,3 @@ export default class DimmerExampleEvents extends Component {
         )
     }
 }
-
-export default About;
