@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
+import { Layout, Header, Navigation, Content } from 'react-mdl';
 import Main from './component/Main';
 import { Link } from 'react-router-dom';
 
 import './App.css';
+import BurgerMenu from "./component/BurgerMenu";
 
 class App extends Component {
     render() {
@@ -12,21 +13,16 @@ class App extends Component {
             <div className="demo-big-content">
               <Layout>
                 <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">MyPortfolio</Link>} scroll>
-                  <Navigation>
+                  <Navigation >
                     <Link to="/resume">Resume</Link>
                     <Link to="/aboutme">About Me</Link>
                     <Link to="/projects">Projects</Link>
                     <Link to="/contact">Contact</Link>
                   </Navigation>
                 </Header>
-                <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">MyPortfolio</Link>}>
-                  <Navigation>
-                    <Link to="/resume">Resume</Link>
-                    <Link to="/aboutme">About Me</Link>
-                    <Link to="/projects">Projects</Link>
-                    <Link to="/contact">Contact</Link>
-                  </Navigation>
-                </Drawer>
+
+                <BurgerMenu/>
+
                 <Content>
                   <div className="page-content" />
                   <Main/>
