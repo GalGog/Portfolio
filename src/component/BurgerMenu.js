@@ -32,6 +32,7 @@ class BurgerMenu extends React.Component {
         this.setState({menuOpen: !this.state.menuOpen})
     }
 
+
     render () {
         return (
             <div>
@@ -44,6 +45,7 @@ class BurgerMenu extends React.Component {
                     <a id="Aboutme" className="menu-item" href="/Aboutme" onClick={() => this.closeMenu()}>About me</a>
                     <a id="Projects" className="menu-item" href="/Projects" onClick={() => this.closeMenu()}>Projects</a>
                     <a id="Contact" className="menu-item" href="/Contact" onClick={() => this.closeMenu()}>Contact</a>
+
                 </Menu>
             </div>
         )

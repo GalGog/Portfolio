@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
 import Education from './Education';
 import Experience from './Experience';
 import Skills from './Skills';
@@ -8,9 +7,8 @@ import Skills from './Skills';
 class Resume extends Component {
     render() {
         return(
-            <div>
-                <Grid>
-                    <Cell className="resume-left-col" col={4}>
+            <div  className="ui stackable two column grid">
+                    <div style={{padding: '3em', width:'30%'}}  className="resume-left column">
                         <div style={{textAlign: 'center'}}>
                             <img
                                 src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
@@ -31,8 +29,8 @@ class Resume extends Component {
                         <p>+44 7549 854467</p>
                         <h5>Email</h5>
                         <p>halynapodyman@gmail.com </p>
-                    </Cell>
-                    <Cell className="resume-right-col" col={8}>
+                    </div>
+                    <div style={{width:'70%'}} className="resume-right column" >
                         <h2>Education</h2>
 
 
@@ -96,8 +94,7 @@ class Resume extends Component {
                         />
 
 
-                    </Cell>
-                </Grid>
+                    </div>
             </div>
         )
     }

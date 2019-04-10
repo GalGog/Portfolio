@@ -18,14 +18,13 @@
   height: 100%;
 }
 /* Resume Page css */
-.resume-right-col {
+.resume-right.column {
   background: #2c3e50;
   color: white;
-  padding: 2em;
-}
-.resume-left-col {
-  background: #f2f2f2;
   padding: 1em;
+}
+.resume-left.column  {
+  background: #f2f2f2;
 }
 
 /* contact page css */
