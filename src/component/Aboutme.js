@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Button, Dimmer, Image } from 'semantic-ui-react'
+import { Container, Button, Dimmer, Image, Segment,  Header } from 'semantic-ui-react'
 
  class About extends Component {
      constructor(props) {
@@ -33,6 +33,7 @@ import { Container, Button, Dimmer, Image } from 'semantic-ui-react'
 
         return (
             <Container>
+                <div className="ui doubling three column grid">
             <Dimmer.Dimmable
                 as={Image}
                 dimmed={active}
@@ -43,6 +44,29 @@ import { Container, Button, Dimmer, Image } from 'semantic-ui-react'
                 size='medium'
                 src='https://react.semantic-ui.com/images/wireframe/image.png'
             />
+
+                <Dimmer.Dimmable
+                    as={Image}
+                    dimmed={active}
+                    dimmer={{ active, content }}
+                    onMouseEnter={this.handleShow}
+                    onMouseLeave={this.handleHide}
+                    onClick={this.handleClick}
+                    size='medium'
+                    src='https://react.semantic-ui.com/images/wireframe/image.png'
+                />
+
+                    <Dimmer.Dimmable
+                        as={Image}
+                        dimmed={active}
+                        dimmer={{ active, content }}
+                        onMouseEnter={this.handleShow}
+                        onMouseLeave={this.handleHide}
+                        onClick={this.handleClick}
+                        size='medium'
+                        src='https://react.semantic-ui.com/images/wireframe/image.png'
+                    />
+                </div>
             </Container>
 
 
