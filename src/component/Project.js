@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, CardTitle, CardText, CardActions, CardMenu, IconButton } from 'react-mdl';
-import { Container, Button, List, } from 'semantic-ui-react'
+import { Container, Button } from 'semantic-ui-react'
 
 class Projects extends Component {
     constructor(props) {

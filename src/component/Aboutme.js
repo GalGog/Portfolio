@@ -1,35 +1,52 @@
 import React, { Component } from 'react';
-import { Button, Dimmer, Header, Image } from 'semantic-ui-react'
+import { Container, Button, Dimmer, Image } from 'semantic-ui-react'
 
-export default class About extends Component {
+ class About extends Component {
+     constructor(props) {
+         super(props);
+         this.handleClick = this.handleClick.bind(this);
+     }
     state = {};
 
     handleShow = () => this.setState({ active: true });
     handleHide = () => this.setState({ active: false });
 
+
+     handleClick(event) {
+         event.preventDefault();
+         const mouseClick = event.nativeEvent.which;
+         if (mouseClick === 1) {
+            return window.open('https://www.google.com/');
+             // Left mouse click - open in modal ...
+         }
+     }
+
+
+
     render() {
         const { active } = this.state
         const content = (
             <div>
-                <Header as='h2' inverted>
-                    Title
-                </Header>
-
-                <Button primary>Add</Button>
                 <Button>View</Button>
             </div>
         );
 
         return (
+            <Container>
             <Dimmer.Dimmable
                 as={Image}
                 dimmed={active}
                 dimmer={{ active, content }}
                 onMouseEnter={this.handleShow}
                 onMouseLeave={this.handleHide}
+                onClick={this.handleClick}
                 size='medium'
                 src='https://react.semantic-ui.com/images/wireframe/image.png'
             />
+            </Container>
+
+
         )
     }
 }
+export default About;
