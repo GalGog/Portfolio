@@ -29,7 +29,15 @@
 
 /* contact page css */
 
+.contact-left.column{
+  background: #f2f2f2;
+}
 
+.contact-right.column {
+  background: #2c3e50;
+  color: white;
+  padding: 1em;
+}
 
 .contact-grid h2 {
   font-family: 'Anton', sans-serif;
