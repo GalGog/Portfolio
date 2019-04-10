@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import { List } from 'semantic-ui-react'
+import { List, Container  } from 'semantic-ui-react'
+
 
 
 class Contact extends Component {
     render() {
         return(
-                <div className="ui stackable two column grid">>
+            <Container>
+            <div className="ui stackable two column grid">>
                     <div style={{padding: '1em', width:'30%', margin: 'auto'}}  className="contact-left column">
                         <img
                             src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
@@ -48,6 +50,7 @@ class Contact extends Component {
                         </div>
                     </div>
                 </div>
+            </Container>
         )
     }
 }
