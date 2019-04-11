@@ -40,9 +40,9 @@ class BurgerMenu extends React.Component {
                     isOpen={this.state.menuOpen}
                     onStateChange={(state) => this.handleStateChange(state)}
                 >
-                    <a id="LandingPage" className="menu-item" href="/"  onClick={() => this.closeMenu()}>MyPortfolio</a>
+                    <a id="LandingPage" className="menu-item" href="/"  onClick={() => this.closeMenu()}>Home</a>
                     <a id="Resume" className="menu-item" href="/Resume" onClick={() => this.closeMenu()}>Resume</a>
-                    <a id="Aboutme" className="menu-item" href="/Aboutme" onClick={() => this.closeMenu()}>About me</a>
+                    <a id="Aboutme" className="menu-item" href="/About" onClick={() => this.closeMenu()}>About</a>
                     <a id="Projects" className="menu-item" href="/Projects" onClick={() => this.closeMenu()}>Projects</a>
                     <a id="Contact" className="menu-item" href="/Contact" onClick={() => this.closeMenu()}>Contact</a>
 
