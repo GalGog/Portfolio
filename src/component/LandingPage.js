@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
+import { Container, Segment} from 'semantic-ui-react'
+
 
 
 class LandingPage extends Component {
     render() {
         return(
-            <div style={{width: '100%', margin: 'auto'}}>
-                <Grid className="landing-grid">
-                    <Cell col={12}>
+            <Container>
+                    <Segment className="landing-grid">
                         <img
                             src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
                             alt="avatar"
@@ -39,9 +39,8 @@ class LandingPage extends Component {
                                 </a>
                             </div>
                         </div>
-                    </Cell>
-                </Grid>
-            </div>
+                    </Segment>
+            </Container>
         )
     }
 }
