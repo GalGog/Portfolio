@@ -74,23 +74,23 @@ class Resume extends Component {
                         <h2>Skills</h2>
                         <Skills
                             skill="HTML/CSS"
-                            progress={80}
+                            percent={80}
                         />
                         <Skills
                             skill="Bootstrap"
-                            progress={70}
+                            percent={70}
                         />
                         <Skills
                             skill="WordPress"
-                            progress={40}
+                            percent={40}
                         />
                         <Skills
                             skill="JavaScript"
-                            progress={25}
+                            percent={25}
                         />
                         <Skills
                             skill="React/Redux"
-                            progress={25}
+                            percent={25}
                         />
 
 

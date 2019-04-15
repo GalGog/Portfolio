@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Layout, Header, Navigation, Content } from 'react-mdl';
-import Main from './component/Main';
-import { Link } from 'react-router-dom';
+import { Link, Switch, Route } from 'react-router-dom';
 
 import './App.css';
 import BurgerMenu from "./component/BurgerMenu";
+
+import LandingPage from './component/LandingPage';
+import About from './component/About';
+import Contact from './component/Contact';
+import Projects from './component/Project';
+import Resume from './component/Resume';
 
 class App extends Component {
     render() {
@@ -25,7 +30,13 @@ class App extends Component {
 
                 <Content>
                   <div className="page-content" />
-                  <Main/>
+                    <Switch>
+                        <Route exact path="/" component={LandingPage} />
+                        <Route path="/about" component={About} />
+                        <Route path="/contact" component={Contact} />
+                        <Route path="/projects" component={Projects} />
+                        <Route path="/resume" component={Resume} />
+                    </Switch>
                 </Content>
               </Layout>
             </div>
