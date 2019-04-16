@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
 import Education from './Education';
 import Experience from './Experience';
 import Skills from './Skills';
@@ -8,9 +7,8 @@ import Skills from './Skills';
 class Resume extends Component {
     render() {
         return(
-            <div>
-                <Grid>
-                    <Cell col={4}>
+            <div  className="ui stackable two column grid">
+                    <div style={{padding: '3em', width:'30%'}}  className="resume-left column">
                         <div style={{textAlign: 'center'}}>
                             <img
                                 src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
@@ -20,9 +18,10 @@ class Resume extends Component {
                         </div>
 
                         <h2 style={{paddingTop: '2em'}}>Halyna Podyman</h2>
-                        <h4 style={{color: 'grey'}}>Programmer</h4>
+                        <h4 style={{color: 'grey'}}>Front End Web Developer</h4>
                         <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        <p>I am highly-motivated, result oriented, self-driven, hard-working, fast learner and smart eager to be a part of the team, learn new technologies, become a valuable employee of the company and bring it success.</p>
+                        <p>Well-organized with an ability to prioritize tasks and capability to work, develop and grow in the company. Experienced in communicating with the team and clients. Attentive and accurate to details.</p>
                         <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
                         <h5>Address</h5>
                         <p>London</p>
@@ -30,63 +29,72 @@ class Resume extends Component {
                         <p>+44 7549 854467</p>
                         <h5>Email</h5>
                         <p>halynapodyman@gmail.com </p>
-                    </Cell>
-                    <Cell className="resume-right-col" col={8}>
+                    </div>
+                    <div style={{width:'70%'}} className="resume-right column" >
                         <h2>Education</h2>
 
 
                         <Education
-                            startYear={2002}
-                            endYear={2006}
-                            schoolName="My University"
-                            schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                            startYear={2017}
+                            endYear={2018}
+                            schoolName="North Hertfordshire College"
+                            schoolDescription="Match and ESOL courses"
                         />
 
                         <Education
-                            startYear={2007}
-                            endYear={2009}
-                            schoolName="My 2nd University"
-                            schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                            startYear={2012}
+                            endYear={2017}
+                            schoolName="National Technical University of Ukraine «Kyiv Polytechnic Institute»"
+                            schoolDescription="Bachelor 's degree in Avionic, Faculty of aviation and space systems"
                         />
                         <hr style={{borderTop: '3px solid #e22947'}} />
 
                         <h2>Experience</h2>
 
                         <Experience
-                            startYear={2009}
-                            endYear={2012}
-                            jobName="First Job"
-                            jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                            startYear={2018}
+                            endYear={2019}
+                            jobName="Jr. Front-End Developer - Solutions Plus Limited"
+                            jobDescription="- Developing and maintained various types of user interfaces using HTML, CSS and JavaScript;"
+                            firstjobDescription="- Transformed complex concepts into simple, elegant and approachable service and product;"
+                            secondjobDescription="- Made a User Interface fully adaptive and adjustable for any kind of devices."
+                            thertjobDescription="- Analysed UI/UX design for responsive layout for improved usability and accessibility;"
+                            fourthjobDescription="- Collaborated with other team members"
+
                         />
 
                         <Experience
                             startYear={2012}
                             endYear={2016}
-                            jobName="Second Job"
-                            jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                            jobName="Freelance Front-End Developer"
+                            jobDescription="- Turn design pages and specific components into HTML, CSS, JavaScript;"
+                            firstjobDescription="- Analysed UI/UX design for responsive layout for improved usability"
                         />
                         <hr style={{borderTop: '3px solid #e22947'}} />
                         <h2>Skills</h2>
                         <Skills
-                            skill="javascript"
-                            progress={100}
-                        />
-                        <Skills
                             skill="HTML/CSS"
-                            progress={80}
+                            percent={80}
                         />
                         <Skills
-                            skill="NodeJS"
-                            progress={50}
+                            skill="Bootstrap"
+                            percent={70}
                         />
                         <Skills
-                            skill="React"
-                            progress={25}
+                            skill="WordPress"
+                            percent={40}
+                        />
+                        <Skills
+                            skill="JavaScript"
+                            percent={25}
+                        />
+                        <Skills
+                            skill="React/Redux"
+                            percent={25}
                         />
 
 
-                    </Cell>
-                </Grid>
+                    </div>
             </div>
         )
     }
