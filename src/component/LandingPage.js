@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
+import { Container, Segment} from 'semantic-ui-react'
 
 
-class Landing extends Component {
+
+class LandingPage extends Component {
     render() {
         return(
-            <div style={{width: '100%', margin: 'auto'}}>
-                <Grid className="landing-grid">
-                    <Cell col={12}>
+            <Container>
+                    <Segment className="landing-grid">
                         <img
                             src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
                             alt="avatar"
@@ -19,37 +19,30 @@ class Landing extends Component {
 
                             <hr/>
 
-                            <p>HTML/CSS | Bootstrap | JavaScript | React/Redux</p>
+                            <p>HTML/CSS | Bootstrap | WordPress | JavaScript | React/Redux</p>
 
                             <div className="social-links">
 
                                 {/* LinkedIn */}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                                    <i className="fa fa-linkedin-square" aria-hidden="true" />
+                                <a href="https://www.linkedin.com/in/halyna-podyman-7ba62514b/" rel="noopener noreferrer" target="_blank">
+                                    <i className="fab fa-linkedin" aria-hidden="true" />
                                 </a>
 
                                 {/* Github */}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                                    <i className="fa fa-github-square" aria-hidden="true" />
+                                <a href="https://github.com/GalGog" rel="noopener noreferrer" target="_blank">
+                                    <i className="fab fa-github" aria-hidden="true" />
                                 </a>
 
                                 {/* Freecodecamp */}
                                 <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                                    <i className="fa fa-free-code-camp" aria-hidden="true" />
+                                    <i className="fab fa-codepen" aria-hidden="true" />
                                 </a>
-
-                                {/* Youtube */}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                                    <i className="fa fa-youtube-square" aria-hidden="true" />
-                                </a>
-
                             </div>
                         </div>
-                    </Cell>
-                </Grid>
-            </div>
+                    </Segment>
+            </Container>
         )
     }
 }
 
-export default Landing;
+export default LandingPage;
