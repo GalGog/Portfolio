@@ -1,4 +1,4 @@
-import Blog from 'assert/images/Blog.png'
+import Blog from '../images/Blog.png';
 
 const supporters = [
     [
@@ -9,7 +9,7 @@ const supporters = [
         },
         {
             name: 'TeenageCancerTrust',
-            img: TeenageCancerTrust,
+            img: Blog,
             link: 'https://www.youtube.com/',
         },
     ]

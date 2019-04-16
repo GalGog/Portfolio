@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 // Components
-import Img from 'components/Img';
+import {Image} from 'semantic-ui-react'
+
 import { SupporterWrapper } from './styledComponents';
 
 const Supporter = (props) => {
@@ -17,7 +18,7 @@ const Supporter = (props) => {
                     state: { supporter: props },
                 }}
             >
-                <Img
+                <Image
                     src={img}
                     alt={name}
                     className={'img-responsive'}
