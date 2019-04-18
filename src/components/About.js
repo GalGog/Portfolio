@@ -1,12 +1,18 @@
 // Libs
 import React, {Component} from 'react';
-import { Container, Segment,Icon, Image  } from 'semantic-ui-react'
+import { Container, Segment } from 'semantic-ui-react'
 
 
 
 // Components
-import LandingPage from "./LandingPage";
 import Skills from './Skills';
+import Img from '../components/Img';
+import SocialLink from '../components/SocialLink';
+import BannerText from "../components/BannerText/";
+import AboutFeature from "../components/AboutFeature";
+
+
+
 
 
 class About extends Component {
@@ -14,49 +20,62 @@ class About extends Component {
     render() {
         return (
             <Container>
-                    <LandingPage
-                    img="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
-                    title="Front End Web Developer"
-                    subtitle="HTML/CSS | Bootstrap | WordPress | JavaScript | React/Redux"
-                    />
 
-                <Segment>
+                <Segment className="landing-grid">
+                    <Img className="avatar-img"
+                         src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
+                         alt='avatar'/>
+                    <BannerText h1="Front End Web Developer"
+                                p="HTML/CSS | Bootstrap | WordPress | JavaScript | React/Redux"
+                                className="banner-text"
+                    />
+                    <SocialLink href="https://www.linkedin.com/in/halyna-podyman-7ba62514b/"
+                                iconName="fab fa-linkedin"
+                                className="social-links"
+
+                    />
+                    <SocialLink href="https://github.com/GalGog"
+                                iconName="fab fa-github"
+                                className="social-links"
+                    />
+                    <SocialLink href="http://google.com"
+                                iconName="fab fa-codepen"
+                                className="social-links"
+                    />
+                </Segment>
+
+
+                    <Segment>
                     <h3 style={{textAlign:'center'}}>About</h3>
                     <div className="ui doubling four column grid">
-                        <div className="column">
-                            <Icon.Group style={{color: '#2c3e50'}} size='huge'>
-                                <Icon size='big' name='circle outline' />
-                                <Icon name='time' style={{color: '#83a4d4'}} />
-                            </Icon.Group>
-                            <span><h4>Fast</h4>Fast load times and lag free interaction, my highest priority.</span>
-                        </div>
-                        <div className="column">
-                            <Icon.Group style={{color: '#2c3e50'}} size='huge'>
-                                <Icon size='big' name='circle outline' />
-                                <Icon name='computer' style={{color: '#83a4d4'}} />
-                            </Icon.Group>
-                            <span><h4>Responsive</h4>My layouts will work on any device, big or small.</span>
-                        </div>
-                        <div className="column">
-                            <Icon.Group style={{color: '#2c3e50'}} size='huge'>
-                                <Icon size='big' name='circle outline' />
-                                <Icon name='idea' style={{color: '#83a4d4'}} />
-                            </Icon.Group>
-                            <span><h4>Intuitive</h4> Strong preference for easy to use, intuitive UX/UI.</span>
-                        </div>
-                        <div className="column">
-                            <Icon.Group style={{color: '#2c3e50'}} size='huge'>
-                                <Icon size='big' name='circle outline' />
-                                <Icon name='rocket' style={{color: '#83a4d4'}} />
-                            </Icon.Group>
-                            <span><h4>Dynamic</h4>Websites don't have to be static, I love making pages come to life.</span>
-                        </div>
+                       <AboutFeature
+                       iconName="time"
+                       h4="Fast"
+                       span="Fast load times and lag free interaction, my highest priority."
+                       />
+                        <AboutFeature
+                        iconName="computer"
+                        h4="Responsive"
+                        span="My layouts will work on any device, big or small."
+                        />
+                        <AboutFeature
+                            iconName="idea"
+                            h4="Intuitive"
+                            span="Strong preference for easy to use, intuitive UX/UI."
+                        />
+                        <AboutFeature
+                            iconName="rocket"
+                            h4="Dynamic"
+                            span="Websites don't have to be static, I love making pages come to life."
+                        />
                     </div>
                 </Segment>
                 <Segment>
                     <div className="ui doubling two column grid">
                     <div className="column">
-                        <Image src='/images/wireframe/square-image.png' size='medium' circular />
+                        <Img className="avatar-img"
+                             src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
+                             alt='avatar'/>
                         <span><h4>Front-End Developer</h4> I'm the Front-End Developer. I have serious passion for UI effects and creating intuitive, dynamic user experiences </span>
                     </div>
                     <div className="column">
