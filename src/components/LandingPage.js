@@ -8,18 +8,10 @@ class LandingPage extends Component {
         return(
             <Container>
                     <Segment className="landing-grid">
-                        <img
-                            src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
-                            alt="avatar"
-                            className="avatar-img"
-                        />
-
+                        <img src={this.props.img} alt='avatar'/>
                         <div className="banner-text">
-                            <h1>Front End Web Developer</h1>
-
-                            <hr/>
-
-                            <p>HTML/CSS | Bootstrap | WordPress | JavaScript | React/Redux</p>
+                            <h1>{this.props.title}</h1>
+                            <p>{this.props.subtitle}</p>
 
                             <div className="social-links">
 

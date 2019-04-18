@@ -1,6 +1,8 @@
 import React, { useState, useContext } from 'react';
 import {slide as Menu } from 'react-burger-menu';
+import { Link } from 'react-router-dom';
 import './BurgerMenu.css';
+
 
 
 
@@ -40,12 +42,11 @@ class BurgerMenu extends React.Component {
                     isOpen={this.state.menuOpen}
                     onStateChange={(state) => this.handleStateChange(state)}
                 >
-                    <a id="LandingPage" className="menu-item" href="/"  onClick={() => this.closeMenu()}>Home</a>
-                    <a id="Resume" className="menu-item" href="/Resume" onClick={() => this.closeMenu()}>Resume</a>
-                    <a id="Aboutme" className="menu-item" href="/About" onClick={() => this.closeMenu()}>About</a>
-                    <a id="Projects" className="menu-item" href="/Projects" onClick={() => this.closeMenu()}>Projects</a>
-                    <a id="Contact" className="menu-item" href="/Contact" onClick={() => this.closeMenu()}>Contact</a>
-
+                    <Link id="LandingPage" className="menu-item" to="/"  onClick={() => this.closeMenu()}>Home</Link>
+                    <Link id="Resume" className="menu-item" to="/resume" onClick={() => this.closeMenu()}>Resume</Link>
+                    <Link id="Aboutme" className="menu-item" to="/about" onClick={() => this.closeMenu()}>About</Link>
+                    <Link id="Projects" className="menu-item" to="/projects" onClick={() => this.closeMenu()}>Projects</Link>
+                    <Link id="Contact" className="menu-item" to="/contact" onClick={() => this.closeMenu()}>Contact</Link>
                 </Menu>
             </div>
         )

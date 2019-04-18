@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import './App.css';
 import { Layout, Header, Navigation, Content } from 'react-mdl';
-import { Link, Switch, Route } from 'react-router-dom';
+import { Route,  Switch, Link } from 'react-router-dom';
 
 import './App.css';
-import BurgerMenu from "./component/BurgerMenu";
 
-import LandingPage from './component/LandingPage';
-import About from './component/About';
-import Contact from './component/Contact';
-import Projects from './component/Project';
-import Resume from './component/Resume';
+import BurgerMenu from "./components/BurgerMenu";
+
+import LandingPage from './components/LandingPage';
+import About from './components/About';
+import Contact from './components/Contact';
+import Projects from './components/Project';
+import Resume from './components/Resume';
 
 class App extends Component {
     render() {

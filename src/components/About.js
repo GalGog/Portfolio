@@ -1,61 +1,24 @@
 // Libs
-import React, {Component} from 'react'
-import { Container, Segment, Image, Icon, Header, Message } from 'semantic-ui-react'
+import React, {Component} from 'react';
+import { Container, Segment,Icon, Image  } from 'semantic-ui-react'
+
 
 
 // Components
 import LandingPage from "./LandingPage";
 import Skills from './Skills';
-import Supporter from './Supporter';
-import { Wrapper, Column, SupportersWrapper } from './styledComponents';
-
-// Utils
-import supporters from './supporters';
-
-// Translations
-import messages from './messages';
-
 
 
 class About extends Component {
-    constructor(props) {
-        super(props);
-
-        this.renderRows = this.renderRows.bind(this);
-        this.renderSupporters = this.renderSupporters.bind(this);
-    }
-
-    shouldComponentUpdate() {
-        return false;
-    }
-
-    renderRows() {
-        return supporters.map((group) => {
-            return (
-                <Column key={supporters.indexOf(group)}>
-                    {this.renderSupporters(group)}
-                </Column>
-            );
-        });
-    }
-
-    renderSupporters(group) {
-        return (
-            group.map((supporter) =>
-                (<Supporter
-                    key={supporter.name}
-                    {...supporter}
-                />)
-            )
-        );
-    }
-
-
 
     render() {
         return (
             <Container>
-                    <LandingPage/>
+                    <LandingPage
+                    img="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
+                    title="Front End Web Developer"
+                    subtitle="HTML/CSS | Bootstrap | WordPress | JavaScript | React/Redux"
+                    />
 
                 <Segment>
                     <h3 style={{textAlign:'center'}}>About</h3>
@@ -122,26 +85,7 @@ class About extends Component {
                 </Segment>
 
                 <Segment>
-                    <Header> <h3>My Latest Work</h3> <h3>Take a look at some of my recent projects</h3></Header>
-                    <div>
-                            <meta
-                                name="description"
-                                content="Supporters of C the Signs"
-                            />
-
-                        <Wrapper headerText={messages.header}>
-                            <p><span> </span>
-                                <a href="https://www.google.com/"><Message {...messages.contactLink} /></a>.
-                            </p>
-                            <Wrapper className="clearfix">
-                                <SupportersWrapper>
-                                    <Message {...messages.description} />
-
-                                    {this.renderRows()}
-                                </SupportersWrapper>
-                            </Wrapper>
-                        </Wrapper>
-                    </div>
+                        <h2>My latest project</h2>
                 </Segment>
 
 
