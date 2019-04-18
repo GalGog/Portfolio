@@ -1,6 +1,6 @@
 // Libs
 import React, {Component} from 'react';
-import { Container, Segment } from 'semantic-ui-react'
+import { Container, Segment, List  } from 'semantic-ui-react'
 
 
 
@@ -10,6 +10,8 @@ import Img from '../components/Img';
 import SocialLink from '../components/SocialLink';
 import BannerText from "../components/BannerText/";
 import AboutFeature from "../components/AboutFeature";
+import ContactMe from "../components/ContactMe";
+
 
 
 
@@ -112,8 +114,26 @@ class About extends Component {
                     <h1>Blog</h1>
                 </Segment>
                 <Segment>
-                    <h1>Contact</h1>
-                    <p>Have a question or want to work together?</p>
+                    <h3>Contact Me</h3>
+                    <h6>Have a question or want to work together?</h6>
+                    <div className="contact-me">
+                            <ContactMe
+                                iconName="phone square"
+                                href="tel:+44 7549 854467"
+                            />
+                            <ContactMe
+                                iconName="linkedin square"
+                                href="https://www.linkedin.com/in/halyna-podyman-7ba62514b/"
+                            />
+                            <ContactMe
+                                iconName="mail"
+                                href="mailto:halynapodyman@gmail.com"
+                            />
+                            <ContactMe
+                                iconName="skype"
+                                href="skype:GalinaPgv/call"
+                            />
+                    </div>
                 </Segment>
         </Container>
         )

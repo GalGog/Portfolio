@@ -13,7 +13,7 @@ import { List } from 'semantic-ui-react'
 function ContactMe(props) {
     return <List.Item>
         <List.Icon name={props.iconName} />
-        <List.Content><a href={props.href}>{props.content}</a>
+        <List.Content><a target="_blank" href={props.href}>{props.content}</a>
         </List.Content>
 </List.Item>
 
