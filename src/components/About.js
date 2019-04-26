@@ -11,6 +11,7 @@ import SocialLink from '../components/SocialLink';
 import BannerText from "../components/BannerText/";
 import AboutFeature from "../components/AboutFeature";
 import ContactMe from "../components/ContactMe";
+import LatestProjects from "./LatestProjects/index";
 
 
 
@@ -106,7 +107,8 @@ class About extends Component {
                 </Segment>
 
                 <Segment>
-                        <h2>My latest project</h2>
+                        <h2>My latest projects</h2>
+                    <LatestProjects/>
                 </Segment>
 
 
