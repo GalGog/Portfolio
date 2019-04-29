@@ -12,6 +12,7 @@ import BannerText from "../components/BannerText/";
 import AboutFeature from "../components/AboutFeature";
 import ContactMe from "../components/ContactMe";
 import LatestProjects from "./LatestProjects/index";
+import ContactMeForm from "./ContactMeForm/index";
 
 
 
@@ -116,8 +117,8 @@ class About extends Component {
                     <h1>Blog</h1>
                 </Segment>
                 <Segment>
-                    <h3>Contact Me</h3>
-                    <h6>Have a question or want to work together?</h6>
+                    <ContactMeForm/>
+
                     <div className="contact-me">
                             <ContactMe
                                 iconName="phone square"
