@@ -1,45 +1,48 @@
-import React, { Component, Fragment } from 'react';
-import './App.css';
-import { Header, Menu, DropdownMenu, Segment, } from 'semantic-ui-react';
-
-import Main from './component/Main';
-import { Link } from 'react-router-dom';
-
+import React, { Component } from 'react';
+import { Layout, Header, Navigation, Content } from 'react-mdl';
+import { Route,  Switch, Link } from 'react-router-dom';
 
 import './App.css';
+
+import BurgerMenu from "./components/BurgerMenu";
+
+import LandingPage from './components/LandingPage';
+import About from './components/About';
+import Contact from './components/Contact';
+import Projects from './components/Project';
+import Resume from './components/Resume';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="ui container">
-        <Fragment >
-          <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">MyPortfolio</Link>} scroll>
-            <Menu>
-              <Link to="/resume">Resume</Link>
-              <Link to="/aboutme">About Me</Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/contact">Contact</Link>
-            </Menu>
-          </Header>
+    render() {
+        return (
+            <div className="demo-big-content">
+              <Layout>
+                <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">MyPortfolio</Link>} scroll>
+                  <Navigation >
+                    <Link to="/resume">Resume</Link>
+                    <Link to="/about">About</Link>
+                    <Link to="/projects">Projects</Link>
+                    <Link to="/contact">Contact</Link>
+                  </Navigation>
+                </Header>
 
-          <DropdownMenu title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">MyPortfolio</Link>}>
-            <Menu>
-              <Link to="/resume">Resume</Link>
-              <Link to="/aboutme">About Me</Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/contact">Contact</Link>
-            </Menu>
-          </DropdownMenu>
+                <BurgerMenu/>
 
-          <Segment>
-            <div className="page-content" />
-            <Main/>
-          </Segment>
+                <Content>
+                  <div className="page-content" />
+                    <Switch>
+                        <Route exact path="/" component={LandingPage} />
+                        <Route path="/about" component={About} />
+                        <Route path="/contact" component={Contact} />
+                        <Route path="/projects" component={Projects} />
+                        <Route path="/resume" component={Resume} />
+                    </Switch>
+                </Content>
+              </Layout>
+            </div>
 
-        </Fragment>
-      </div>
-    );
-  }
+        );
+    }
 }
 
 export default App;
