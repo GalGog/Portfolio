@@ -1,15 +1,14 @@
-<<<<<<< HEAD
-##ReactSemanticUI
+#ReactSemanticUI
  Personal portfolio project app based on  create-react-app and React Router v4.
 
-##Tools
+#Tools
 * create-react-app
 * Semantic UI material design
 * Semantic UI React
 * Type checking with PropTypes
 * React Router v4
 
-##Getting Started
+#Getting Started
 There are two methods for getting started with this repo.
 
 Familiar with Git?
