@@ -111,11 +111,6 @@ class About extends Component {
                         <h2>My latest projects</h2>
                     <LatestProjects/>
                 </Segment>
-
-
-                <Segment>
-                    <h1>Blog</h1>
-                </Segment>
                 <Segment>
                     <ContactMeForm/>
 
