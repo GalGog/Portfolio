@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ##ReactSemanticUI
  Personal portfolio project app based on  create-react-app and React Router v4.
 
@@ -22,3 +23,9 @@ Not Familiar with Git?
 Click here then download the .zip file. Extract the contents of the zip file, then open your terminal, change to the project directory, and:
 * npm install
 *npm start
+||||||| merged common ancestors
+=======
+# ReactSemanticUI
+App base on SemanticUI
+react project 
+>>>>>>> origin/feature
