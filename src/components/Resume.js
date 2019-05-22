@@ -23,12 +23,9 @@ class Resume extends Component {
                         <p>I am highly-motivated, result oriented, self-driven, hard-working, fast learner and smart eager to be a part of the team, learn new technologies, become a valuable employee of the company and bring it success.</p>
                         <p>Well-organized with an ability to prioritize tasks and capability to work, develop and grow in the company. Experienced in communicating with the team and clients. Attentive and accurate to details.</p>
                         <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-                        <h5>Address</h5>
-                        <p>London</p>
-                        <h5>Phone</h5>
-                        <p>+44 7549 854467</p>
-                        <h5>Email</h5>
-                        <p>halynapodyman@gmail.com </p>
+                        <h5>Address: London</h5>
+                        <h5>Phone: +44 7549 854467</h5>
+                        <h5>Email: halynapodyman@gmail.com </h5>
                     </div>
                     <div style={{width:'70%'}} className="resume-right column" >
                         <h2>Education</h2>
@@ -43,8 +40,8 @@ class Resume extends Component {
 
                         <Education
                             startYear={2012}
-                            endYear={2017}
-                            schoolName="National Technical University of Ukraine «Kyiv Polytechnic Institute»"
+                            endYear={2016}
+                            schoolName="National Technical University of Ukraine «Kiev Polytechnic Institute»"
                             schoolDescription="Bachelor 's degree in Avionic, Faculty of aviation and space systems"
                         />
                         <hr style={{borderTop: '3px solid #e22947'}} />
@@ -64,8 +61,8 @@ class Resume extends Component {
                         />
 
                         <Experience
-                            startYear={2012}
-                            endYear={2016}
+                            startYear={2016}
+                            endYear={2018}
                             jobName="Freelance Front-End Developer"
                             jobDescription="- Turn design pages and specific components into HTML, CSS, JavaScript;"
                             firstjobDescription="- Analysed UI/UX design for responsive layout for improved usability"
@@ -82,7 +79,7 @@ class Resume extends Component {
                         />
                         <Skills
                             skill="WordPress"
-                            percent={40}
+                            percent={60}
                         />
                         <Skills
                             skill="JavaScript"

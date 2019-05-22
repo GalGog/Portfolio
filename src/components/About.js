@@ -1,6 +1,6 @@
 // Libs
 import React, {Component} from 'react';
-import { Container, Segment, List  } from 'semantic-ui-react'
+import { Container, Segment } from 'semantic-ui-react'
 
 
 
@@ -10,7 +10,6 @@ import Img from '../components/Img';
 import SocialLink from '../components/SocialLink';
 import BannerText from "../components/BannerText/";
 import AboutFeature from "../components/AboutFeature";
-import ContactMe from "../components/ContactMe";
 import LatestProjects from "./LatestProjects/index";
 import ContactMeForm from "./ContactMeForm/index";
 
@@ -93,7 +92,7 @@ class About extends Component {
                         />
                         <Skills
                             skill="WordPress"
-                            percent={40}
+                            percent={60}
                         />
                         <Skills
                             skill="JavaScript"
@@ -113,25 +112,6 @@ class About extends Component {
                 </Segment>
                 <Segment>
                     <ContactMeForm/>
-
-                    <div className="contact-me">
-                            <ContactMe
-                                iconName="phone square"
-                                href="tel:+44 7549 854467"
-                            />
-                            <ContactMe
-                                iconName="linkedin square"
-                                href="https://www.linkedin.com/in/halyna-podyman-7ba62514b/"
-                            />
-                            <ContactMe
-                                iconName="mail"
-                                href="mailto:halynapodyman@gmail.com"
-                            />
-                            <ContactMe
-                                iconName="skype"
-                                href="skype:GalinaPgv/call"
-                            />
-                    </div>
                 </Segment>
         </Container>
         )
