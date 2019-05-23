@@ -3,9 +3,9 @@ import { Container, Segment} from 'semantic-ui-react'
 
 
 // Components
-import Img from '../components/Img';
-import SocialLink from '../components/SocialLink';
-import BannerText from "./BannerText/index";
+import Img from '../Img/index';
+import SocialLink from '../SocialLink/index';
+import BannerText from "../BannerText/index";
 
 class LandingPage extends Component {
     render() {

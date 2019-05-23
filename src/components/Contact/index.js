@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { List} from 'semantic-ui-react'
 
 // Components
-import ContactMe from "../components/ContactMe";
-import Img from '../components/Img';
+import ContactMe from "../ContactMe/index";
+import Img from '../Img/index';
 
 
 
@@ -30,7 +30,7 @@ class Contact extends Component {
                                 <ContactMe
                                     iconName="phone square"
                                     content="+44 7549 854467"
-                                    href=""
+                                    href="tel:+44 7549 854467"
                                 />
                                 <ContactMe
                                     iconName="linkedin square"
@@ -45,7 +45,7 @@ class Contact extends Component {
                                 <ContactMe
                                     iconName="skype"
                                     content="Galina Pgv"
-                                    href="https://www.skype.com/en/"
+                                    href="skype:GalinaPgv/call"
                                 />
                             </List>
                         </div>
