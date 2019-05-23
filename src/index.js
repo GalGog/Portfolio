@@ -6,7 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route} from "react-router-dom";
 
 
 ReactDOM.render(

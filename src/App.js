@@ -4,13 +4,13 @@ import { Route,  Switch, Link } from 'react-router-dom';
 
 import './App.css';
 
-import BurgerMenu from "./components/BurgerMenu";
+import BurgerMenu from "./components/BurgerMenu/index";
 
-import LandingPage from './components/LandingPage';
-import About from './components/About';
-import Contact from './components/Contact';
-import Projects from './components/Project';
-import Resume from './components/Resume';
+import LandingPage from './components/Landing page/index';
+import About from './components/About/index';
+import Contact from './components/Contact/index';
+import Projects from './components/Project/index';
+import Resume from './components/Resume/index';
 
 class App extends Component {
     render() {

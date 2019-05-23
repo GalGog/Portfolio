@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
 
 function BannerText(props) {
     return <div className={props.className}>
-        <h1>{props.h1}</h1>
+        <h1>{props.h4}</h1>
         <hr/>
         <p>{props.p}</p>
         </div>;

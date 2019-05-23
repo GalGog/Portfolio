@@ -5,11 +5,14 @@ import { Container, Segment } from 'semantic-ui-react'
 
 
 // Components
-import Skills from './Skills';
-import Img from '../components/Img';
-import SocialLink from '../components/SocialLink';
-import BannerText from "../components/BannerText/";
-import AboutFeature from "../components/AboutFeature";
+import Skills from '../Skills/index';
+import Img from '../Img/index';
+import SocialLink from '../SocialLink/index';
+import BannerText from "../BannerText/index";
+import AboutFeature from "../AboutFeature/index";
+import LatestProjects from "../LatestProjects/index";
+import ContactMeForm from "../ContactMeForm/index";
+
 
 
 
@@ -25,9 +28,9 @@ class About extends Component {
                     <Img className="avatar-img"
                          src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
                          alt='avatar'/>
-                    <BannerText h1="Front End Web Developer"
+                    <BannerText h4="Front End Web Developer"
                                 p="HTML/CSS | Bootstrap | WordPress | JavaScript | React/Redux"
-                                className="banner-text"
+
                     />
                     <SocialLink href="https://www.linkedin.com/in/halyna-podyman-7ba62514b/"
                                 iconName="fab fa-linkedin"
@@ -89,7 +92,7 @@ class About extends Component {
                         />
                         <Skills
                             skill="WordPress"
-                            percent={40}
+                            percent={60}
                         />
                         <Skills
                             skill="JavaScript"
@@ -104,16 +107,11 @@ class About extends Component {
                 </Segment>
 
                 <Segment>
-                        <h2>My latest project</h2>
-                </Segment>
-
-
-                <Segment>
-                    <h1>Blog</h1>
+                        <h3>My latest projects</h3>
+                    <LatestProjects/>
                 </Segment>
                 <Segment>
-                    <h1>Contact</h1>
-                    <p>Have a question or want to work together?</p>
+                    <ContactMeForm/>
                 </Segment>
         </Container>
         )
