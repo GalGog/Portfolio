@@ -16,7 +16,6 @@ const Supporter = (props) => {
                     src={img}
                     alt={name}
                 />
-                <Button className="btn">View Site </Button>
             </a>
         </div>
     );
