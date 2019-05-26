@@ -28,7 +28,7 @@ class About extends Component {
                     <Img className="avatar-img"
                          src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
                          alt='avatar'/>
-                    <BannerText h4="Front End Web Developer"
+                    <BannerText h1="Front End Web Developer"
                                 p="HTML/CSS | Bootstrap | WordPress | JavaScript | React/Redux"
 
                     />

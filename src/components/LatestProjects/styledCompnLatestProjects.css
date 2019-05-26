@@ -1,39 +1,5 @@
 
-.content-upp {
-    margin-left: 3%;
-    display: inline-block;
+.content-upp:hover{
+    opacity: 0.2;
+    filter: alpha(opacity=80);
 }
-
-@media screen and (min-width: 576px) {
-    .content-upp {
-        width: 23%;
-        margin-right:  5%;
-    }
-}
-@media screen and (max-width: 575px) {
-    .content-upp {
-        width: 70%;
-        margin-left: 3%;
-    }
-}
-
-
-.transparent{
-    position: absolute;
-
-    width: 22.5%;
-    height: 42%;
-
-}
-
-.cont-project:hover .transparent{
-    display: block;
-    background-color:rgba(46,49,49,0.9);
-    z-index: 1;
-    position: absolute;
-
-    width: 22.5%;
-    height: 42%;
-
-}
-

@@ -4,19 +4,19 @@ import PropTypes from 'prop-types';
 import { Image, Button} from 'semantic-ui-react';
 
 
+import styledCompnLatestProjects from './styledCompnLatestProjects.css';
+
+
 const Supporter = (props) => {
     const { name, img, link } = props;
     return (
-        <div className="cont-project" >
+        <div className="content-upp" >
             <a href={link}>
                 <Image
                     src={img}
                     alt={name}
-                    className={'img-responsive'}
                 />
-                <div className="transparent">
-                    <Button className="btn">View Site </Button>
-                </div>
+                <Button className="btn">View Site </Button>
             </a>
         </div>
     );
