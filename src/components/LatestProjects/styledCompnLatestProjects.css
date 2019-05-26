@@ -1,26 +1,5 @@
-.cont{
-    width: 80%;
-    position: relative;
-    margin-left: 10%;
+
+.content-upp:hover{
+    opacity: 0.2;
+    filter: alpha(opacity=80);
 }
-
-.content-upp {
-    margin-left: 3%;
-    display: inline-block;
-}
-
-@media screen and (min-width: 576px) {
-    .content-upp {
-        width: 23%;
-        margin-right:  5%;
-    }
-}
-@media screen and (max-width: 575px) {
-    .content-upp {
-        width: 70%;
-        margin-left: 3%;
-    }
-}
-
-
-
