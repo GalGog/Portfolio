@@ -17,12 +17,12 @@ class Projects extends Component {
                     {/* Project 1 */}
 
                     <div className="column" style={{width: '30%'}} >
-                    <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #1</CardTitle>
+                    <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Filter App</CardTitle>
                     <CardText>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                        React Filter App
                     </CardText>
                     <CardActions border>
-                        <Button colored>GitHub</Button>
+                        <Button colored href='https://github.com/GalGog/ReactFilter.git'>GitHub</Button>
                         <Button colored>Live Demo</Button>
                     </CardActions>
                     <CardMenu style={{color: '#fff'}}>

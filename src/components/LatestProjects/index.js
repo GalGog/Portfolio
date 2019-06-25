@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-// Components
+//Import utils
 import Supporter from "./Supporter";
 import latestprojectsdata from '../../assets/data/latestprojectsdata';
 

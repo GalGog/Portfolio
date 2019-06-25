@@ -1,7 +1,7 @@
 // Libs
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Image, Button} from 'semantic-ui-react';
+import { Image} from 'semantic-ui-react';
 
 
 import styledCompnLatestProjects from './styledCompnLatestProjects.css';

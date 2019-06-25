@@ -1,4 +1,4 @@
-## ReactSemanticUI
+##  Portfolio
 Personal portfolio project app based on  create-react-app and React Router v4.
 
 ## Tools
