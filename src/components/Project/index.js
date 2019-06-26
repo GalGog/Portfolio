@@ -112,17 +112,17 @@ class Projects extends Component {
                             {/* Project 2 */}
                             <div className="column" style={{width: '30%'}} >
                                 <CardTitle style={{color: '#fff', height: '176px',
-                                    backgroundImage: "url(" + "https://image.shutterstock.com/image-vector/vector-illustration-tax-refund-business-260nw-421189411.jpg" + ")",
+                                    backgroundImage: "url(" + "https://spotlight.cthesigns.co.uk/wp-content/custom/img/NewSpotlightLogoDesktop.png" + ")",
                                     backgroundPosition: 'center',
                                     backgroundSize: 'cover',
                                     backgroundRepeat: 'no-repeat'}}>
                                 </CardTitle>
                                 <CardText>
-                                    Self-assessment tax returns
+                                    C the Signs
                                 </CardText>
                                 <CardActions border>
                                     <Button colored><a href='/'>GitHub</a></Button>
-                                    <Button colored><a href='http://hp.s4p.uk'>Live Demo</a></Button>
+                                    <Button colored><a href='https://spotlight.cthesigns.co.uk/'>Live Demo</a></Button>
                                 </CardActions>
                                 <CardMenu style={{color: '#fff'}}>
                                     <IconButton name="share" />
