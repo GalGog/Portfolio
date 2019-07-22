@@ -1,9 +1,5 @@
-
 .DS_Store
-.gitignore
 .idea/
 node_modules/
-public/
 yarn.lock
 build/
-package-lock.json

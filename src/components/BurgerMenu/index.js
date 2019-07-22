@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React from 'react';
 import {slide as Menu } from 'react-burger-menu';
 import { Link } from 'react-router-dom';
 import './BurgerMenu.css';
@@ -24,16 +24,6 @@ class BurgerMenu extends React.Component {
     closeMenu () {
         this.setState({menuOpen: false})
     }
-
-
-
-    // This can be used to toggle the menu, e.g. when using a custom icon
-    // Tip: You probably want to hide either/both default icons if using a custom icon
-    // See https://github.com/negomi/react-burger-menu#custom-icons
-    toggleMenu () {
-        this.setState({menuOpen: !this.state.menuOpen})
-    }
-
 
     render () {
         return (

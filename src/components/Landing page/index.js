@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container, Segment} from 'semantic-ui-react'
 
 
-// Components
+//Import utils
 import Img from '../Img/index';
 import SocialLink from '../SocialLink/index';
 import BannerText from "../BannerText/index";

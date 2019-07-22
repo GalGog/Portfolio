@@ -6,12 +6,15 @@ import { Container, Segment } from 'semantic-ui-react'
 
 // Components
 import Skills from '../Skills/index';
-import Img from '../Img/index';
-import SocialLink from '../SocialLink/index';
-import BannerText from "../BannerText/index";
-import AboutFeature from "../AboutFeature/index";
 import LatestProjects from "../LatestProjects/index";
 import ContactMeForm from "../ContactMeForm/index";
+
+//Import utils
+import Img from '../Img/index';
+import BannerText from "../BannerText/index";
+import SocialLink from '../SocialLink/index';
+import AboutFeature from "../AboutFeature/index";
+
 
 
 
