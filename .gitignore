@@ -2,4 +2,8 @@
 .idea/
 node_modules/
 yarn.lock
-build/
+build/--
+ -
+
+# Local Netlify folder
+.netlify

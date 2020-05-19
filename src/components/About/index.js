@@ -82,7 +82,7 @@ class About extends Component {
                         <Img className="avatar-img"
                              src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
                              alt='avatar'/>
-                        <span><h4>Front-End Developer</h4> I'm the Front-End Developer. I have serious passion for UI effects and creating intuitive, dynamic user experiences </span>
+                        <span><h4>Front-End Developer <h10>Front-End Developer</h10></h4> I'm the Front-End Developer. I have serious passion for UI effects and creating intuitive, dynamic user experiences </span>
                     </div>
                     <div className="column">
                         <Skills
