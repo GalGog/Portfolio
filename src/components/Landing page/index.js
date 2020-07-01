@@ -6,6 +6,7 @@ import { Container, Segment} from 'semantic-ui-react'
 import Img from '../Img/index';
 import SocialLink from '../SocialLink/index';
 import BannerText from "../BannerText/index";
+import logo from "../../assets/images/logo.jpg";
 
 class LandingPage extends Component {
     render() {
@@ -13,8 +14,7 @@ class LandingPage extends Component {
             <Container>
                     <Segment className="landing-grid">
                         <Img className="avatar-img"
-                             src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
-                             alt='avatar'/>
+                             src={logo} width="100" height="50" alt="photo"/>
                         <BannerText h1="Front End Web Developer"
                                     p="HTML/CSS | Bootstrap | WordPress | JavaScript | React/Redux"
                                     className="banner-text"

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Education from '../Education/index';
 import Experience from '../Experience/index';
 import Skills from '../Skills/index';
+import logo from "../../assets/images/logo.jpg";
+import Img from "../Img";
 
 
 class Resume extends Component {
@@ -10,11 +12,8 @@ class Resume extends Component {
             <div  className="ui stackable two column grid">
                     <div style={{padding: '3em', width:'30%'}}  className="resume-left column">
                         <div style={{textAlign: 'center'}}>
-                            <img
-                                src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
-                                alt="avatar"
-                                style={{height: '200px'}}
-                            />
+                            <Img className="avatar-img"
+                                 src={logo} width="100" height="50" alt="photo"/>
                         </div>
 
                         <h2 style={{paddingTop: '2em'}}>Halyna Podyman</h2>

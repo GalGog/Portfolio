@@ -4,6 +4,7 @@ import { List} from 'semantic-ui-react'
 // Components
 import ContactMe from "../ContactMe/index";
 import Img from '../Img/index';
+import logo from "../../assets/images/logo.jpg";
 
 
 
@@ -15,8 +16,7 @@ class Contact extends Component {
                 <div className="ui stackable two column grid">>
                     <div style={{padding: '1em', width:'30%', margin: 'auto'}}  className="contact-left column">
                         <Img className="avatar-img"
-                             src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
-                             alt='avatar'/>
+                             src={logo} width="100" height="50" alt="photo"/>
                         <h2>Halyna Podyman</h2>
                         <p style={{ width: '75%', margin: 'auto', paddingTop: '1em'}}>Front End Web Developer</p>
 

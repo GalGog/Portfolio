@@ -11,6 +11,7 @@ import ContactMeForm from "../ContactMeForm/index";
 
 //Import utils
 import Img from '../Img/index';
+import logo from '../../assets/images/logo.jpg';
 import BannerText from "../BannerText/index";
 import SocialLink from '../SocialLink/index';
 import AboutFeature from "../AboutFeature/index";
@@ -29,8 +30,7 @@ class About extends Component {
 
                 <Segment className="landing-grid">
                     <Img className="avatar-img"
-                         src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
-                         alt='avatar'/>
+                    src={logo} width="100" height="50" />
                     <BannerText h1="Front End Web Developer"
                                 p="HTML/CSS | Bootstrap | WordPress | JavaScript | React/Redux"
 
